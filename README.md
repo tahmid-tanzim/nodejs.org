@@ -1,7 +1,7 @@
 # Node.js v5.3.0
 Learning in-depth Node.js
 
-### 1.1. Installing [Node.js](https://nodejs.org/en/) via [nvm (Node Version Manager)](https://github.com/creationix/nvm) on Ubuntu Linux.
+### 1. Installing [Node.js](https://nodejs.org/en/) via [nvm (Node Version Manager)](https://github.com/creationix/nvm) on Ubuntu Linux.
 ##### Installing [NVM](https://github.com/creationix/nvm) :
 ```
 sudo apt-get install git git-core curl
@@ -28,3 +28,5 @@ nvm alias default 5.3.0
 node --version
 nvm list
 ```
+### 2. The [Global Objects](https://nodejs.org/api/globals.html)
+These objects are available in all modules. Some of these objects aren't actually in the global scope but in the module scope - this will be noted.
