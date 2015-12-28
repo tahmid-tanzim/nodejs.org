@@ -1,0 +1,21 @@
+/* Grab Command Line Arguments */
+function grab(flag) {
+    var index = process.argv.indexOf(flag);
+    return (index === -1) ? null : process.argv[index+1];
+}
+
+var user = grab('--user');
+var greeting = grab('--greeting');
+
+if(!user || !greeting) {
+    console.log("Sorry!\nSample Standard Format: $ node process --user 'Tahmid Tanzim' --greeting 'Good Morning!'");
+} else {
+    console.log(`Welcome ${user}, ${greeting}`);
+}
+
+console.log("\nprocess.argv is:");
+/**
+ * Note: Default process.argv
+ * Output: [ '/home/tanzim/.nvm/versions/node/v5.3.0/bin/node', '/home/tanzim/Projects/nodejs.org/process' ]
+ * */
+console.log(process.argv);

@@ -30,3 +30,7 @@ nvm list
 ```
 ### 2. The [Global Objects](https://nodejs.org/api/globals.html)
 These objects are available in all modules. Some of these objects aren't actually in the global scope but in the module scope - this will be noted.
+### 3. Argument variables with [process.argv](https://nodejs.org/api/process.html#process_process_argv)
+An array containing the command line arguments. The first element will be 'node', the second element will be the name of the JavaScript file. The next elements will be any additional command line arguments.
+```
+```
