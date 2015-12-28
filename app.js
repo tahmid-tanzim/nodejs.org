@@ -18,4 +18,6 @@ console.log("\nprocess.argv is:");
  * Note: Default process.argv
  * Output: [ '/home/tanzim/.nvm/versions/node/v5.3.0/bin/node', '/home/tanzim/Projects/nodejs.org/process' ]
  * */
-console.log(process.argv);
+process.argv.forEach(function(val, index, array) {
+    console.log(index + ': ' + val);
+});
