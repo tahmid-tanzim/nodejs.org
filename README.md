@@ -39,8 +39,9 @@ A Readable Stream for stdin and A Writable Stream to stdout
 
 ### 3. Node Modules :
 #### 3.1. Core modules :
-* [path](https://nodejs.org/api/path.html)
-* [util](https://nodejs.org/api/util.html)
-* [v8](https://nodejs.org/api/v8.html)
+- [path](https://nodejs.org/api/path.html) - This module contains utilities for handling and transforming file paths. Almost all these methods perform only string transformations. The file system is not consulted to check whether paths are valid.
+- [util](https://nodejs.org/api/util.html) - The util module is primarily designed to support the needs of Node.js's internal APIs. Many of these utilities are useful for your own programs. If you find that these functions are lacking for your purposes, however, you are encouraged to write your own utilities. We are not interested in any future additions to the util module that are unnecessary for Node.js's internal functionality.
+- [v8](https://nodejs.org/api/v8.html) - This module exposes events and interfaces specific to the version of V8 built with Node.js. These interfaces are subject to change by upstream and are therefore not covered under the stability index.
 #### 3.2. Collecting information with [Readline](https://nodejs.org/api/readline.html). 
 #### 3.3. Handling [events](https://nodejs.org/api/events.html) with [EventEmitter](https://nodejs.org/api/events.html#events_class_events_eventemitter).
+#### 3.4. Creating [child process](https://nodejs.org/api/child_process.html) with [exec](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback) and [spawn](https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options).
