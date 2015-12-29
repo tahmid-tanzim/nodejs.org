@@ -42,3 +42,4 @@ A Readable Stream for stdin and A Writable Stream to stdout
 * [path](https://nodejs.org/api/path.html)
 * [util](https://nodejs.org/api/util.html)
 * [v8](https://nodejs.org/api/v8.html)
+#### 3.2. Collecting information with [Readline](https://nodejs.org/api/readline.html)
