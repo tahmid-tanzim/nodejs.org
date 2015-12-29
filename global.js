@@ -2,9 +2,9 @@
  * Note: The `require` function is global to import other node modules.
  * Refs: https://nodejs.org/api/path.html
  * */
-var path = require("path");
+var path = require('path');
 
-var hello = "Hello World from Node.js";
+var hello = 'Hello World from Node.js';
 
 var justNode = hello.slice(17);
 

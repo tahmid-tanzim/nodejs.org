@@ -29,7 +29,6 @@ node --version
 nvm list
 ```
 
-
 ### 2. Node Core:
 #### 2.1. The [Global](https://nodejs.org/api/globals.html) Objects
 These objects are available in all modules. Some of these objects aren't actually in the global scope but in the module scope - this will be noted.
@@ -38,3 +37,8 @@ An array containing the command line arguments. The first element will be 'node'
 #### 2.3. [Process](https://nodejs.org/api/process.html): Standard input ([process.stdin](https://nodejs.org/api/process.html#process_process_stdin)) and Standard output ([process.stdout](https://nodejs.org/api/process.html#process_process_stdout))
 A Readable Stream for stdin and A Writable Stream to stdout 
 
+### 3. Node Modules:
+#### 3.1. Core modules
+* [path](https://nodejs.org/api/path.html)
+* [util](https://nodejs.org/api/util.html)
+* [v8](https://nodejs.org/api/v8.html)
