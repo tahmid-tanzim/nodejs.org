@@ -1,16 +1,15 @@
-var EventEmitter = require('events').EventEmitter;
-var util = require('util');
-
-const Person = function(name) {
-    this.name = name;
-};
-
-util.inherits(Person, EventEmitter);
+var Person = require('./lib/Person');
 
 const lupin = new Person("Tahmid Tanzim");
+const fatiha = new Person("Kazi Fatiha Akram");
 
 lupin.on('speak', function(said) {
-    util.log(`${this.name}: ${said}`);
+    console.log(`${this.name}: ${said}`);
+});
+
+fatiha.on('speak', function(said) {
+    console.log(`${this.name} -> ${said}`);
 });
 
 lupin.emit('speak', 'Impossible is Nothing!');
+fatiha.emit('speak', 'Hello World');
