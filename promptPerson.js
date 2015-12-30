@@ -22,7 +22,9 @@ if (!Array.prototype.last) {
 rl.question('What is the name of real person? ', (answer) => {
     realPerson.name = answer || 'Unknown';
 
-    fs.writeFileSync(realPerson.name + '.md', `${realPerson.name}\n=====================\n\n`);
+    //fs.writeFileSync(realPerson.name + '.md', `${realPerson.name}\n=====================\n\n`);
+    var stream = fs.createWriteStream(realPerson.name + '.md');
+    stream.write(`${realPerson.name}\n=====================\n\n`);
 
     rl.setPrompt(`What would ${realPerson.name} say? `);
     rl.prompt();
@@ -30,10 +32,12 @@ rl.question('What is the name of real person? ', (answer) => {
     /* Read saying Line */
     rl.on('line', (saying) => {
         if(saying.toLowerCase().trim() === 'exit') {
+            stream.close();
             rl.close();
         } else {
             realPerson.sayings.push(saying.trim());
-            fs.appendFile(realPerson.name + '.md', `* ${realPerson.sayings.last()} \n`);
+            //fs.appendFile(realPerson.name + '.md', `* ${realPerson.sayings.last()} \n`);
+            stream.write(`* ${realPerson.sayings.last()} \n`);
             console.log(realPerson.sayings.last());
             rl.setPrompt(`What else would ${realPerson.name} say? (Type 'exit' to leave) `);
             rl.prompt();
