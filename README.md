@@ -43,3 +43,6 @@ Like [path](https://nodejs.org/api/path.html), [util](https://nodejs.org/api/uti
 #### 3.2. Collecting information with [Readline](https://nodejs.org/api/readline.html). 
 #### 3.3. Handling [events](https://nodejs.org/api/events.html) with [EventEmitter](https://nodejs.org/api/events.html#events_class_events_eventemitter).
 #### 3.4. Creating [child process](https://nodejs.org/api/child_process.html) with [exec](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback) and [spawn](https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options).
+
+### 4. The File System :
+#### 4.1. Listing directory files with [fs](https://nodejs.org/api/fs.html)
