@@ -46,3 +46,13 @@ Like [path](https://nodejs.org/api/path.html), [util](https://nodejs.org/api/uti
 
 ### 4. The [File System](https://nodejs.org/api/fs.html) :
 ### 5. The HTTP Module
+For https module you can create a self-certified certificate. Here's how to do it on a linux-based system:
+First, generate a 1024 bit RSA key in agent2-key.pem
+```
+mkdir keys
+openssl genrsa 1024 > keys/agent2-key.pem
+```
+Then, generate an SSL certificate with that key:
+```
+openssl req -x509 -new -key keys/agent2-key.pem > keys/agent2-cert.pem
+```
