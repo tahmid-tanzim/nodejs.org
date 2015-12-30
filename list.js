@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 /**
- * Note: Reading file synchronously will block the single node.js thread.
+ * Note: Reading files from dir synchronously will block the single node.js thread.
  * Refs: https://nodejs.org/api/fs.html#fs_fs_readdirsync_path
  * */
 //const files = fs.readdirSync('./lib');

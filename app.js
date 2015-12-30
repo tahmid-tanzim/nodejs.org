@@ -4,8 +4,8 @@ function grab(flag) {
     return (index === -1) ? null : process.argv[index+1];
 }
 
-var user = grab('--user');
-var greeting = grab('--greeting');
+const user = grab('--user');
+const greeting = grab('--greeting');
 
 if(!user || !greeting) {
     console.log("Sorry!\nSample Standard Format: $ node app --user 'Tahmid Tanzim' --greeting 'Good Morning!'");

@@ -2,7 +2,7 @@
  * Note: The `require` function is global to import other node modules.
  * Refs: https://nodejs.org/api/path.html
  * */
-var path = require('path');
+const path = require('path');
 
 var hello = 'Hello World from Node.js';
 
