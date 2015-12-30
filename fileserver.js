@@ -7,7 +7,7 @@ const options = {
     cert: fs.readFileSync('keys/agent2-cert.pem')
 };
 
-const server = https.createServer(options, (request, response) => {
+https.createServer(options, (request, response) => {
     console.log(`${request.method} request for ${request.url}`);
 
     if (request.url === '/') {
