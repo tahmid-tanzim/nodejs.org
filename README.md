@@ -65,4 +65,15 @@ npm install -g node-dev
 ```
 npm install -g jshint
 ```
+- [httpster](https://www.npmjs.com/package/httpster) - Simple http server for static content
+Globally Installed
+```
+npm install -g httpster
+httpster -p 3000 -d ./public/
+```
+Locally Installed
+```
+npm install httpster
+./node_modules/httpster/bin/httpster -p 3000 -d ./public/
+```
 
