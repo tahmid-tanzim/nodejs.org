@@ -76,4 +76,11 @@ Locally Installed
 npm install httpster
 ./node_modules/httpster/bin/httpster -p 3000 -d ./public/
 ```
+### 7. Testing and Debugging
+#### 7.1. Testing with [mocha](https://mochajs.org/) and [Chai](http://chaijs.com/)
+```
+npm install -g mocha
+npm install --save-dev chai
+```
+
 
