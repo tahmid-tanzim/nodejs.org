@@ -56,3 +56,13 @@ Then, generate an SSL certificate with that key:
 ```
 openssl req -x509 -new -key keys/agent2-key.pem > keys/agent2-cert.pem
 ```
+### 6. Node Package Manager
+- [Node-dev](https://www.npmjs.com/package/node-dev) automatically restarts the node process when a file is modified.
+```
+npm install -g node-dev
+```
+- [JSHint](https://www.npmjs.com/package/jshint) is a community-driven tool to detect errors and potential problems in JavaScript code
+```
+npm install -g jshint
+```
+

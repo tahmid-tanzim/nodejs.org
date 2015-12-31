@@ -1,23 +1,33 @@
-/* Grab Command Line Arguments */
-function grab(flag) {
-    var index = process.argv.indexOf(flag);
-    return (index === -1) ? null : process.argv[index+1];
-}
+/* jshint esnext: true */
+const https = require('https');
+const fs = require('fs');
 
-const user = grab('--user');
-const greeting = grab('--greeting');
+const options = {
+    key: fs.readFileSync('keys/agent2-key.pem'),
+    cert: fs.readFileSync('keys/agent2-cert.pem')
+};
 
-if(!user || !greeting) {
-    console.log("Sorry!\nSample Standard Format: $ node app --user 'Tahmid Tanzim' --greeting 'Good Morning!'");
-} else {
-    console.log(`Welcome ${user}, ${greeting}`);
-}
-
-console.log("\nprocess.argv is:");
+https.createServer(options ,(request, response) => {
+    response.writeHead(200, {
+        'Content-Type': 'text/html'
+    });
+    response.end(`
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Web Server</title>
+        </head>
+        <body>
+            <h1>Web Page Served</h1>
+            <p>${request.url}</p>
+            <p>${request.method}</p>
+            <p>You are welcome ...</p>
+        </body>
+    </html>
+    `);
+}).listen(3000);
 /**
- * Note: Default process.argv
- * Output: [ '/home/tanzim/.nvm/versions/node/v5.3.0/bin/node', '/home/tanzim/Projects/nodejs.org/process' ]
+ * Run server: node-dev app
+ * jshint app.js
  * */
-process.argv.forEach((val, index, array) => {
-    console.log(index + ': ' + val);
-});
+console.log(`Server running on 'https://localhost:3000'\nPress Ctrl + c to exit`);

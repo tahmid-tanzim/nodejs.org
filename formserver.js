@@ -38,11 +38,8 @@ https.createServer(options, (request, response) => {
                     </body>
                 </html>
             `);
-
         });
     }
-
-
 
 }).listen(3000);
 
