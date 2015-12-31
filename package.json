@@ -2,11 +2,10 @@
   "name": "nodejs.org",
   "version": "1.0.0",
   "description": "A collection of skier terms and definations",
-  "main": "application.js",
+  "main": "ws.js",
   "dependencies": {
-    "body-parser": "^1.14.2",
-    "cors": "^2.7.1",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "socket.io": "^1.3.7"
   },
   "devDependencies": {},
   "scripts": {

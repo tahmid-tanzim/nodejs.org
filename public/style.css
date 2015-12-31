@@ -1,26 +1,46 @@
-html, body {
-    height: 100%;
-}
-
-body, h1 {
-    margin: 0;
-}
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: black;
+    color: #0F0;
+    font-family: verdana;
 }
 
-main {
+body input,
+body label {
+    display: block;
+}
+
+h1 {
     text-align: center;
-    font-family: cursive;
-    color: navy;
 }
 
-figcaption {
+
+input {
+    outline: none;
+    border: none;
+    background-color: black;
+    color: #0F0;
+    padding: 1em .5em;
+    display: block;
     font-size: 1.5em;
-    font-family: fantasy;
-    color: #001125;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
+label {
+    display: block;
+    padding: 1em .5em;
+    font-size: 1.5em;
+}
+
+div.messages {
+    margin-left: 1em;
+}
+
+form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
