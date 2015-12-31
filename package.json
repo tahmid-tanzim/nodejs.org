@@ -1,0 +1,31 @@
+{
+  "name": "nodejs.org",
+  "version": "1.0.0",
+  "description": "A collection of skier terms and definations",
+  "main": "application.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahmid-tanzim/nodejs.org.git"
+  },
+  "keywords": [
+    "ski",
+    "terms",
+    "dictionary"
+  ],
+  "author": "Tahmid Tanzim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tahmid-tanzim/nodejs.org/issues"
+  },
+  "homepage": "https://github.com/tahmid-tanzim/nodejs.org#readme"
+}
