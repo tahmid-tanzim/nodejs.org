@@ -82,5 +82,9 @@ npm install httpster
 npm install -g mocha
 npm install --save-dev chai
 ```
+#### 7.2. Mocking a server with [Nock](https://www.npmjs.com/package/nock)
+```
+npm install --save-dev nock
+```
 
 
