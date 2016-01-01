@@ -86,5 +86,9 @@ npm install --save-dev chai
 ```
 npm install --save-dev nock
 ```
+#### 7.3. Injecting dependencies with [rewire](https://www.npmjs.com/package/rewire)
+```
+npm install --save-dev rewire
+```
 
 
