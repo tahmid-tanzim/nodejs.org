@@ -5,11 +5,11 @@ Learning in-depth Node.js
 ##### 1.1. Installing [NVM](https://github.com/creationix/nvm) :
 ```
 sudo apt-get install git git-core curl
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
 ```
 By [GNU Wget](https://www.gnu.org/software/wget/) :
 ```
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
 ```
 ##### 1.2. Append the NVM path in ~/.bashrc :
 ```
@@ -23,8 +23,8 @@ nvm
 ```
 ##### 1.4. Installing [Node.js](https://nodejs.org/en/) and Set default [version](https://nodejs.org/en/download/releases/) :
 ```
-nvm install 5.3.0
-nvm alias default 5.3.0
+nvm install 4.3.0
+nvm alias default 4.3.0
 node --version
 nvm list
 ```
