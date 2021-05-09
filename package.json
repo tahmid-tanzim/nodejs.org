@@ -5,11 +5,11 @@
   "main": "ws.js",
   "dependencies": {
     "express": "^4.13.3",
-    "socket.io": "^1.3.7"
+    "socket.io": ">=2.4.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
-    "nock": "^3.6.0",
+    "nock": "^13.0.11",
     "rewire": "^2.5.1"
   },
   "scripts": {
